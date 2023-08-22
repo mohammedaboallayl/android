@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigator"
+    app:startDestination="@id/starter">
+
+    <fragment
+        android:id="@+id/starter"
+        android:name="com.example.myapplication.Fragments.Starter"
+        android:label="fragment_starter"
+        tools:layout="@layout/fragment_starter" >
+        <action
+            android:id="@+id/action_starter_to_filmsListFragment"
+            app:destination="@id/filmsListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/filmsListFragment"
+        android:name="com.example.myapplication.Fragments.FilmsListFragment"
+        android:label="fragment_films_list"
+        tools:layout="@layout/fragment_films_list" >
+        <action
+            android:id="@+id/action_filmsListFragment_to_privateFilmeViewer"
+            app:destination="@id/privateFilmeViewer" />
+    </fragment>
+    <fragment
+        android:id="@+id/privateFilmeViewer"
+        android:name="com.example.myapplication.Fragments.PrivateFilmeViewer"
+        android:label="PrivateFilmeViewer" >
+        <action
+            android:id="@+id/action_privateFilmeViewer_to_filmsListFragment"
+            app:destination="@id/filmsListFragment" />
+        <action
+            android:id="@+id/action_privateFilmeViewer_to_filmesCategoricalViewer"
+            app:destination="@id/filmesCategoricalViewer" />
+    </fragment>
+    <fragment
+        android:id="@+id/filmesCategoricalViewer"
+        android:name="com.example.myapplication.Fragments.FilmesCategoricalViewer"
+        android:label="fragment_filmes_categorical_viewer"
+        tools:layout="@layout/fragment_filmes_categorical_viewer" >
+        <action
+            android:id="@+id/action_filmesCategoricalViewer_to_privateFilmeViewer"
+            app:destination="@id/privateFilmeViewer" />
+    </fragment>
+</navigation>

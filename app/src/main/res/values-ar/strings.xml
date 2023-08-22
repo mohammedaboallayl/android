@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="login"> تسجيل الدخول </string>
+    <string name="enter_personal_perfoile"> ادخل بيانات حسابك </string>
+    <string name="phone_number">رقم الهاتف </string>
+    <string name="password">كلمه السر </string>
+    <string name="signup">انشاء حساب</string>
+    <string name="create_personal_profile">انشئ حسابك الخاص متبوع ب .com</string>
+    <string name="city">الاسم</string>
+    <string name="email">حساب جوجل</string>
+    <string name="dont_have">ليس لديك حساب حتى الان؟</string>
+    <string name="by_signingup">بالضغط على انشاء حساب هذا يعنى انك توافق على </string>
+
+    <string name="serviceandpolicy">بنود الخدمه و سياسه حمايه الخصوصيه </string>
+    <string name="haveaccount">بالفعل لدي حساب؟</string>
+    <string name="Comming_Soon">قريبا</string>
+    <string name="Refresh">اعاده تحميل</string>
+</resources>

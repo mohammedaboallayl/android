@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    style="@style/Theme.MaterialComponents.NoActionBar"
+    android:fitsSystemWindows="true"
+    tools:context=".Fragments.FilmsListFragment">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:background="#26267A"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.Toolbar
+            android:background="#00FFFFFF"
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:textColor="#FFF"
+            android:textFontWeight="600"
+            android:textSize="26sp"
+            android:textStyle="normal"
+            app:titleMarginStart="50dp"
+            app:popupTheme="@style/ThemeOverlay.AppCompat"
+            app:layout_collapseMode="pin" />
+    </com.google.android.material.appbar.AppBarLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tablayout"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            app:tabMode="fixed"
+            app:tabGravity="fill"
+            app:tabTextColor="@color/white"
+            app:tabSelectedTextColor="#83F610"
+            android:background="#372E2E"
+            />
+        <androidx.viewpager2.widget.ViewPager2
+            android:background="#372E2E"
+            android:id="@+id/ViewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"/>
+    </LinearLayout>
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
